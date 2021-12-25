@@ -8,7 +8,9 @@
   "scripts": {
     "start": "yarn install; npx tsc -w"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^17.0.4"
+  },
   "devDependencies": {
     "typescript": "^4.5.4"
   }

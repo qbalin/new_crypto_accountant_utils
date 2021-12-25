@@ -1,2 +1,4 @@
-const hello = 1;
-export default hello;
+import KucoinClient from './api_clients/kucoin';
+import CoingeckoClient from './api_clients/coingecko';
+
+export default { KucoinClient, CoingeckoClient };
