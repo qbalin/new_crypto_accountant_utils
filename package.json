@@ -1,0 +1,8 @@
+{
+  "name": "@qbalin/new_crypto_accountant_utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Quentin Balin",
+  "license": "MIT",
+  "private": true
+}
