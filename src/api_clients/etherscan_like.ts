@@ -23,6 +23,18 @@ abstract class Client {
     return Array.isArray(data);
   }
 
+  async normalTransactions({ walletAddress, since } : { walletAddress: string, since: Date }) {
+    return this.call({ requestPath: `?module=account&action=txlist&address=${walletAddress}`, since });
+  }
+
+  async internalTransactions({ walletAddress, since } : { walletAddress: string, since: Date }) {
+    return this.call({ requestPath: `?module=account&action=txlistinternal&address=${walletAddress}`, since });
+  }
+
+  async tokenTransactions({ walletAddress, since } : { walletAddress: string, since: Date }) {
+    return this.call({ requestPath: `?module=account&action=tokentx&address=${walletAddress}`, since });
+  }
+
   async call({
     requestPath, since = new Date('1970'), until = new Date(), method = 'GET',
   }: { requestPath: string, since?: Date, until?: Date, method?: HttpMethod }) {

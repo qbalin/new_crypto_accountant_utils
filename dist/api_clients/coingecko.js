@@ -36,6 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CoingeckoClient = void 0;
 // eslint-disable-next-line max-classes-per-file
 var utils_1 = require("../utils");
 var rateLimitedFetchJson = (0, utils_1.rateLimit)({ fn: utils_1.fetchJson, callsPerMinute: 50 });
@@ -124,4 +125,6 @@ var CoingeckoClient = /** @class */ (function () {
     };
     return CoingeckoClient;
 }());
-exports.default = new CoingeckoClient();
+exports.CoingeckoClient = CoingeckoClient;
+var client = new CoingeckoClient();
+exports.default = client;

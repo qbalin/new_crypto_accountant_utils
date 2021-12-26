@@ -29,7 +29,7 @@ class CoinList {
   }
 }
 
-class CoingeckoClient {
+export class CoingeckoClient {
   private readonly baseUrl: string;
 
   private coinList: null | CoinList;
@@ -84,4 +84,6 @@ class CoingeckoClient {
   }
 }
 
-export default new CoingeckoClient();
+const client = new CoingeckoClient();
+
+export default client;
