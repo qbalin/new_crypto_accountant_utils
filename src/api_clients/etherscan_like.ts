@@ -23,15 +23,15 @@ abstract class Client {
     return Array.isArray(data);
   }
 
-  async normalTransactions({ walletAddress, since } : { walletAddress: string, since: Date }) {
+  async normalTransactions({ walletAddress, since = new Date('1970') } : { walletAddress: string, since?: Date }) {
     return this.call({ requestPath: `?module=account&action=txlist&address=${walletAddress}`, since });
   }
 
-  async internalTransactions({ walletAddress, since } : { walletAddress: string, since: Date }) {
+  async internalTransactions({ walletAddress, since = new Date('1970') } : { walletAddress: string, since?: Date }) {
     return this.call({ requestPath: `?module=account&action=txlistinternal&address=${walletAddress}`, since });
   }
 
-  async tokenTransactions({ walletAddress, since } : { walletAddress: string, since: Date }) {
+  async tokenTransactions({ walletAddress, since = new Date('1970') } : { walletAddress: string, since?: Date }) {
     return this.call({ requestPath: `?module=account&action=tokentx&address=${walletAddress}`, since });
   }
 

@@ -50,25 +50,25 @@ var Client = /** @class */ (function () {
         return Array.isArray(data);
     };
     Client.prototype.normalTransactions = function (_a) {
-        var walletAddress = _a.walletAddress, since = _a.since;
+        var walletAddress = _a.walletAddress, _b = _a.since, since = _b === void 0 ? new Date('1970') : _b;
         return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_b) {
+            return __generator(this, function (_c) {
                 return [2 /*return*/, this.call({ requestPath: "?module=account&action=txlist&address=".concat(walletAddress), since: since })];
             });
         });
     };
     Client.prototype.internalTransactions = function (_a) {
-        var walletAddress = _a.walletAddress, since = _a.since;
+        var walletAddress = _a.walletAddress, _b = _a.since, since = _b === void 0 ? new Date('1970') : _b;
         return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_b) {
+            return __generator(this, function (_c) {
                 return [2 /*return*/, this.call({ requestPath: "?module=account&action=txlistinternal&address=".concat(walletAddress), since: since })];
             });
         });
     };
     Client.prototype.tokenTransactions = function (_a) {
-        var walletAddress = _a.walletAddress, since = _a.since;
+        var walletAddress = _a.walletAddress, _b = _a.since, since = _b === void 0 ? new Date('1970') : _b;
         return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_b) {
+            return __generator(this, function (_c) {
                 return [2 /*return*/, this.call({ requestPath: "?module=account&action=tokentx&address=".concat(walletAddress), since: since })];
             });
         });

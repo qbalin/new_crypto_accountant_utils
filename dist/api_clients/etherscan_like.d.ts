@@ -11,21 +11,21 @@ declare abstract class Client {
     static isPaginatedResult(data: any): boolean;
     normalTransactions({ walletAddress, since }: {
         walletAddress: string;
-        since: Date;
+        since?: Date;
     }): Promise<{
         [key: string]: any;
         timeStamp: string;
     }[]>;
     internalTransactions({ walletAddress, since }: {
         walletAddress: string;
-        since: Date;
+        since?: Date;
     }): Promise<{
         [key: string]: any;
         timeStamp: string;
     }[]>;
     tokenTransactions({ walletAddress, since }: {
         walletAddress: string;
-        since: Date;
+        since?: Date;
     }): Promise<{
         [key: string]: any;
         timeStamp: string;
