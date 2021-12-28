@@ -11,6 +11,6 @@ import CoinbaseAttributes from './attributes/coinbase';
 interface Attributes {
     Kucoin: KucoinAttributes;
     EtherscanLike: EtherscanLikeAttributes;
-    CoinbaseAttributes: CoinbaseAttributes;
+    Coinbase: CoinbaseAttributes;
 }
 export { KucoinClient, CoingeckoClient, PolygonscanClient, BscscanClient, CoinbaseClient, EtherscanClient, SupportedBlockchain, SupportedPlatform, Attributes };
