@@ -1,5 +1,5 @@
-import EtherscanBaseClient from './etherscan_like';
-import { SupportedBlockchain } from '../constants';
+import EtherscanBaseClient from '../etherscan_like/api_client';
+import { SupportedBlockchain } from '../../constants';
 
 class Client extends EtherscanBaseClient {
   constructor({ etherscanLikeApiKey }:

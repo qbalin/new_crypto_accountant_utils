@@ -1,5 +1,5 @@
 // eslint-disable-next-line max-classes-per-file
-import { fetchJson, rateLimit } from '../utils';
+import { fetchJson, rateLimit } from '../../utils';
 
 const rateLimitedFetchJson = rateLimit({ fn: fetchJson, callsPerMinute: 50 });
 

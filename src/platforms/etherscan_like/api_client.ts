@@ -1,5 +1,5 @@
 import { URL } from 'url';
-import { fetchJson as nonLimitedFetchJson, HttpMethod, rateLimit } from '../utils';
+import { fetchJson as nonLimitedFetchJson, HttpMethod, rateLimit } from '../../utils';
 
 const fetchJson = rateLimit({ callsPerMinute: 300, fn: nonLimitedFetchJson });
 

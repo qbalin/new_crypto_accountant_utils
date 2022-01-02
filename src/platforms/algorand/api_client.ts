@@ -1,4 +1,4 @@
-import { fetchJson } from '../utils';
+import { fetchJson } from '../../utils';
 
 class Client {
   private static readonly baseUrl = 'https://algoexplorerapi.io/idx2/v2';

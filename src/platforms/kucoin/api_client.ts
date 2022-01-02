@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import { fetchJson, rateLimit, beginningOfYear } from '../utils';
+import { fetchJson, rateLimit, beginningOfYear } from '../../utils';
 
 const fetchSixPerSecond = rateLimit({ callsPerMinute: 360, fn: fetchJson });
 
