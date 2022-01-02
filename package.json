@@ -2,8 +2,7 @@
   "name": "@qbalin/new_crypto_accountant_utils",
   "repository": "https://github.com/qbalin/new_crypto_accountant_utils.git",
   "version": "1.0.5",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
   "author": "Quentin Balin",
   "license": "MIT",
   "scripts": {
